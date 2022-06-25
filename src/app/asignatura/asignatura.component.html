@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+      Lista de Asignaturas de la carrera Ingenieria de Sistemas
+    </div>
+    <div class="card-body">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Primer Semestre</th>
+                <th scope="col">Segundo Semestre</th>
+                <th scope="col">Tercer Semestre</th>
+                <th scope="col">Cuarto Semestre</th>
+                <th scope="col">Quinto Semestre</th>
+                <th scope="col">Sexto Semestre</th>
+                <th scope="col">Septimo Semestre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let itemEstudiantes of asignaturaLista">
+                <td>{{itemEstudiantes.dni}}</td>
+                <td>{{itemEstudiantes.nombre}}</td>
+                <td>{{itemEstudiantes.apellido}}</td>
+                <td>{{itemEstudiantes.edad}}</td>
+                <td>{{itemEstudiantes.sexo}}</td>
+                <td>{{itemEstudiantes.fechaNacimiento}}</td>
+                <td>{{itemEstudiantes.codigo}}</td>
+                <td>{{itemEstudiantes.serie}}</td>
+              </tr>
+            </tbody>
+          </table>
+      <a routerLink="" class="btn btn-primary">Nuevo Asignatura</a>
+    </div>
+  </div>
